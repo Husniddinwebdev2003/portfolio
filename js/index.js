@@ -24,6 +24,7 @@ function rightUp() {
 
     let rotate = document.getElementById('rotateimg');
     rotate.style.transform = "rotate(0deg)";
+    rotate.oncl
 }
 
 function rightDown() {
@@ -39,6 +40,7 @@ function rightDown() {
     let rotate = document.getElementById('rotateimg');
     rotate.style.transform = "rotate(180deg)";
 }
+
 
 function changeBgcolorLight() {
     let btnFirst = document.getElementById('clickOne');
@@ -73,6 +75,16 @@ function changeBgcolorLight() {
     let cardBgcolorChange = document.getElementsByClassName('card-upbox');
     for (let j = 0; j < cardBgcolorChange.length; j++) {
         cardBgcolorChange[j].style.backgroundColor = "#fff";
+    }
+
+    let downImgLight = document.getElementsByClassName('down-imgLight');
+    for(let i = 0; i < downImgLight.length; i++) {
+        downImgLight[i].style.display = "inline-block";
+    }
+
+    let downImgDark = document.getElementsByClassName('down-imgDark');
+    for(let i = 0; i < downImgDark.length; i++) {
+        downImgDark[i].style.display = "none";
     }
 
 }
@@ -111,4 +123,66 @@ function changeBgcolorDark() {
     for (let j = 0; j < cardBgcolorChange.length; j++) {
         cardBgcolorChange[j].style.backgroundColor = "#161c2d";
     }
+
+    let downImgLight = document.getElementsByClassName('down-imgLight');
+    for(let i = 0; i < downImgLight.length; i++) {
+        downImgLight[i].style.display = "none";
+    }
+
+    let downImgDark = document.getElementsByClassName('down-imgDark');
+    for(let i = 0; i < downImgDark.length; i++) {
+        downImgDark[i].style.display = "inline-block";
+    }
+}
+
+function mediaNav() {
+    let a = document.getElementById('demos');
+    a.style.color = "#495fef";
+    let on = document.getElementById('onclik');
+    on.style.zIndex = 4;
+    let off = document.getElementById('offclick');
+    off.style.zIndex = 5;
+    let b = document.getElementsByClassName('downMedia-box');
+    b[0].style.display = "block";
+    let c = document.getElementById('arrowimg');
+    c.style.transform = "rotate(90deg)";
+}
+
+function mediaNavOff() {
+    let a = document.getElementById('demos');
+    a.style.color = "#495fef";
+    let on = document.getElementById('onclik');
+    on.style.zIndex = 5;
+    let off = document.getElementById('offclick');
+    off.style.zIndex = 4;
+    let b = document.getElementsByClassName('downMedia-box');
+    b[0].style.display = "none";
+    let c = document.getElementById('arrowimg');
+    c.style.transform = "rotate(0deg)";
+}
+
+function mediaNavSec() {
+    let a = document.getElementById('pages');
+    a.style.color = "#495fef";
+    let on = document.getElementById('oncliksec');
+    on.style.zIndex = 4;
+    let off = document.getElementById('offclicksec');
+    off.style.zIndex = 5;
+    let b = document.getElementsByClassName('downMedia-box');
+    b[1].style.display = "block";
+    let c = document.getElementById('arrowimg1');
+    c.style.transform = "rotate(90deg)";
+}
+
+function mediaNavSecOff() {
+    let a = document.getElementById('pages');
+    a.style.color = "#495fef";
+    let on = document.getElementById('oncliksec');
+    on.style.zIndex = 5;
+    let off = document.getElementById('offclicksec');
+    off.style.zIndex = 4;
+    let b = document.getElementsByClassName('downMedia-box');
+    b[1].style.display = "none";
+    let c = document.getElementById('arrowimg1');
+    c.style.transform = "rotate(0deg)";
 }
