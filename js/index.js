@@ -150,7 +150,7 @@ function mediaNav() {
 
 function mediaNavOff() {
     let a = document.getElementById('demos');
-    a.style.color = "#495fef";
+    a.style.color = "#161c2d";
     let on = document.getElementById('onclik');
     on.style.zIndex = 5;
     let off = document.getElementById('offclick');
@@ -176,7 +176,7 @@ function mediaNavSec() {
 
 function mediaNavSecOff() {
     let a = document.getElementById('pages');
-    a.style.color = "#495fef";
+    a.style.color = "#161c2d";
     let on = document.getElementById('oncliksec');
     on.style.zIndex = 5;
     let off = document.getElementById('offclicksec');
