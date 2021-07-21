@@ -24,8 +24,68 @@
                     </div>
                     <div class="col-md-9">
                         <ul id="media">
-                            <li><a href="#" class="changeColor">creative demos</a></li>
-                            <li><a href="#" class="changeColor">pages</a></li>
+                            <li class="downbar">
+                                <ul class="down-box">
+                                    <li><a href="#">designer 01</a></li>
+                                    <li><a href="#">designer 02</a></li>
+                                    <li><a href="#">developer 01</a></li>
+                                    <li><a href="#">developer 02</a></li>
+                                    <li><a href="#">agency 01</a></li>
+                                    <li><a href="#">agency 02</a></li>
+                                    <li><a href="#">photography 01</a></li>
+                                    <li><a href="#">photography 02</a></li>
+                                </ul>
+                                <a href="#" class="changeColor">creative demos</a>
+                                <img src="img/ent_chevron_small_right.png" alt="icon" class="down-imgLight">
+                                <img src="img/ent_chevron_small_right2.png" alt="icon" class="down-imgDark">
+                            </li>
+                            <li class="downbar">
+                                <ul class="down-box-second">
+                                    <li class="down-in">
+                                        <ul>
+                                            <li class="down-in">
+                                                <ul class="masonry">
+                                                    <li><a href="#">masonry grid 2</a></li>
+                                                    <li><a href="#">masonry grid 3 fluid</a></li>
+                                                    <li><a href="#">masonry grid 3</a></li>
+                                                    <li><a href="#">masonry grid 4 fluid</a></li>
+                                                    <li><a href="#">masonry grid 4</a></li>
+                                                </ul>
+                                                <a href="#">masonry style</a>
+                                                <img src="img/ent_chevron_small_right.png" alt="icon">
+
+                                            </li>
+                                            <li class="down-in">
+                                                <ul>
+                                                    <li><a href="#">grid style 2</a></li>
+                                                    <li><a href="#">grid style 3 fluid</a></li>
+                                                    <li><a href="#">grid style 3</a></li>
+                                                    <li><a href="#">grid style 4 fluid</a></li>
+                                                    <li><a href="#">grid style 4</a></li>
+                                                </ul>
+                                                <a href="#">grid style</a>
+                                                <img src="img/ent_chevron_small_right.png" alt="icon">
+                                            </li>
+                                        </ul>
+                                        <a href="#">portfolio</a>
+                                        <img src="img/ent_chevron_small_right.png" alt="icon">
+                                    </li>
+                                    <li class="down-in">
+                                        <ul>
+                                            <li><a href="#">detalis 01</a></li>
+                                            <li><a href="#">detalis 01</a></li>
+                                        </ul>
+                                        <a href="#">portfolio detalis</a>
+                                        <img src="img/ent_chevron_small_right.png" alt="icon">
+                                    </li>
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">contact</a></li>
+                                </ul>
+                                <a href="#" class="changeColor">pages</a>
+                                <img src="img/ent_chevron_small_right.png" alt="icon" class="down-imgLight">
+                                <img src="img/ent_chevron_small_right2.png" alt="icon" class="down-imgDark">
+
+                            </li>
                             <li><a href="#" class="changeColor">about me.</a></li>
                             <li><a href="#" class="changeColor">contact.</a></li>
                             <li><a href="#" class="changeColor">support</a></li>
@@ -40,8 +100,44 @@
                                 <h4>folio.</h4>
                                 <img src="img/ent_cross.png" alt="icon" onclick="respnsiveNav()" id="check-cross">
                                 <ul id="extra-nav">
-                                    <li><a href="#">creative demos</a></li>
-                                    <li><a href="#">pages</a></li>
+                                    <li class="downResponsiv">
+                                        <span id="onclik" onclick="mediaNav()"></span>
+                                        <span id="offclick" onclick="mediaNavOff()"></span>
+                                        <a href="#" id="demos">creative demos</a>
+                                        <img src="img/ent_chevron_small_right.png" alt="icon" id="arrowimg">
+                                    </li>
+                                    <li class="downphone">
+                                        <ul class="downMedia-box">
+                                            <li><a href="#">designer 01</a></li>
+                                            <li><a href="#">designer 02</a></li>
+                                            <li><a href="#">developer 01</a></li>
+                                            <li><a href="#">developer 02</a></li>
+                                            <li><a href="#">agency 01</a></li>
+                                            <li><a href="#">agency 02</a></li>
+                                            <li><a href="#">photography 01</a></li>
+                                            <li><a href="#">photography 02</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="downResponsiv">
+                                        <span id="oncliksec" onclick="mediaNavSec()"></span>
+                                        <span id="offclicksec" onclick="mediaNavSecOff()"></span>
+                                        <a href="#" id="pages">pages</a>
+                                        <img src="img/ent_chevron_small_right.png" alt="icon" id="arrowimg1">
+                                    </li>
+                                    <li class="downphone">
+                                        <ul class="downMedia-box">
+                                            <li>
+                                                <a href="#">portfolio</a>
+                                                <img src="img/ent_chevron_small_right.png" alt="icon">
+                                            </li>
+                                            <li>
+                                                <a href="#">portfolio detalis</a>
+                                                <img src="img/ent_chevron_small_right.png" alt="icon">
+                                            </li>
+                                            <li><a href="#">about</a></li>
+                                            <li><a href="#">contact</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">about me.</a></li>
                                     <li><a href="#">contact.</a></li>
                                 </ul>
@@ -354,7 +450,7 @@
             <button id="clickTwo" class="btnDark" onclick="changeBgcolorDark()">dark</button>
         </div>
     </div>
-    
+
     <script src="js/index.js"></script>
 </body>
 
