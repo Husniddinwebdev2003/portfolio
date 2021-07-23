@@ -1,4 +1,5 @@
 @import url("bootstrap-reboot.css");
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -89,6 +90,10 @@ header nav .logo-box h4 {
   line-height: 40px;
 }
 
+header nav .logo-box h4 a {
+  color: #161c2d;
+}
+
 header nav #media {
   list-style: none;
   display: -webkit-box;
@@ -132,11 +137,11 @@ header nav #media li.downbar .down-box {
   position: absolute;
   padding: 0;
   margin: 0;
-  left: -55%;
+  left: -45%;
   top: 100%;
   list-style: none;
   background-color: #fff;
-  width: 175%;
+  width: 145%;
   display: none;
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
@@ -174,11 +179,11 @@ header nav #media li.downbar .down-box-second {
   position: absolute;
   padding: 0;
   margin: 0;
-  left: -200%;
+  left: -100%;
   top: 100%;
   list-style: none;
   background-color: #fff;
-  width: 350%;
+  width: 260%;
   display: none;
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
@@ -194,7 +199,7 @@ header nav #media li.downbar .down-box-second {
 header nav #media li.downbar .down-box-second li {
   margin: 0;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 0 0 2rem;
 }
 
 header nav #media li.downbar .down-box-second li:hover > a {
@@ -235,7 +240,7 @@ header nav #media li.downbar .down-box-second li.down-in ul {
   padding: 0;
   position: absolute;
   right: 100%;
-  width: 90%;
+  width: 100%;
   padding: 1.5rem 0rem;
   top: 0;
   display: none;
@@ -382,6 +387,10 @@ header #banner .banner-img img {
   position: relative;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+#products .card-content .card:hover {
+  cursor: pointer;
 }
 
 #products .card-content .card:hover .card-upbox {
@@ -555,6 +564,10 @@ footer .footer-title p {
   position: relative;
 }
 
+.change .img:hover {
+  cursor: pointer;
+}
+
 .change .img .index {
   opacity: 0;
   position: absolute;
@@ -702,6 +715,9 @@ footer .footer-title p {
     right: 2.5rem;
     top: 1.7rem;
   }
+  header nav #opacity #responsive #check-cross:hover {
+    cursor: pointer;
+  }
   header nav #opacity #responsive h4 {
     color: #161c2d;
     font-size: 24px;
@@ -709,6 +725,9 @@ footer .footer-title p {
     line-height: 40px;
     display: inline-block;
     margin-bottom: 3rem;
+  }
+  header nav #opacity #responsive h4 a {
+    color: #161c2d;
   }
   header nav #opacity #responsive #extra-nav {
     margin: 0;
@@ -739,6 +758,9 @@ footer .footer-title p {
     z-index: 9999999999;
     display: none;
   }
+  header nav #opacity #responsive #extra-nav .downphone .downMedia-box > li:hover a {
+    color: #495fef;
+  }
   header nav #opacity #responsive #extra-nav .downphone .downMedia-box li {
     padding: .4rem 1.3rem;
     margin: 0;
@@ -760,6 +782,9 @@ footer .footer-title p {
   header nav #opacity #responsive #extra-nav .downphone .downMedia-box li:nth-child(1) > img, header nav #opacity #responsive #extra-nav .downphone .downMedia-box li:nth-child(2) > img {
     width: 10px;
     height: 10px;
+  }
+  header nav #opacity #responsive #extra-nav .downphone .downMedia-box > li.br_bottom {
+    border-bottom: 1px solid #c3c3c3;
   }
   header nav #opacity #responsive #extra-nav li.downResponsiv {
     display: -webkit-box;
@@ -786,13 +811,14 @@ footer .footer-title p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: red;
     opacity: 1;
     z-index: 4;
     opacity: 0;
   }
+  header nav #opacity #responsive #extra-nav li.downResponsiv > span:hover + a {
+    color: #495fef;
+  }
   header nav #opacity #responsive #extra-nav li.downResponsiv > span:nth-child(1) {
-    background-color: blue;
     z-index: 5;
   }
   header nav #opacity #responsive #extra-nav li {
@@ -831,6 +857,9 @@ footer .footer-title p {
     width: 70%;
     margin-top: 5rem;
   }
+  footer {
+    padding: 0rem 0 3rem  0;
+  }
 }
 
 @media only screen and (max-width: 48em) {
@@ -864,6 +893,9 @@ footer .footer-title p {
         flex-basis: 10%;
     background-color: #161c2d;
     margin: 0 auto;
+  }
+  header nav .check-box:hover {
+    cursor: pointer;
   }
   header nav #media {
     display: none;
