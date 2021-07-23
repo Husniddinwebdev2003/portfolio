@@ -81,6 +81,10 @@ header {
                 font-size: 24px;
                 font-weight: 700;
                 line-height: 40px;
+
+                a {
+                    color: #161c2d;
+                }
             }
         }
 
@@ -120,11 +124,11 @@ header {
                     position: absolute;
                     padding: 0;
                     margin: 0;
-                    left: -55%;
+                    left: -45%;
                     top: 100%;
                     list-style: none;
                     background-color: #fff;
-                    width: 175%;
+                    width: 145%;
                     display: none;
                     transition: all 2s ease;
                     padding:  1rem 2rem;
@@ -158,11 +162,11 @@ header {
                     position: absolute;
                     padding: 0;
                     margin: 0;
-                    left: -200%;
+                    left: -100%;
                     top: 100%;
                     list-style: none;
                     background-color: #fff;
-                    width: 350%;
+                    width: 260%;
                     display: none;
                     transition: all 2s ease;
                     padding:  1rem 0;
@@ -175,7 +179,7 @@ header {
                     li {
                         margin: 0;
                         width: 100%;
-                        padding: 0 2rem;
+                        padding: 0 0 0 2rem ;
 
                         &:hover > a {
                             color: #495fef !important; 
@@ -199,6 +203,7 @@ header {
                         }
 
                         .masonry {
+                            
                             & > li {
 
                                 padding-right: 0;
@@ -215,7 +220,7 @@ header {
                             padding: 0;
                             position: absolute;
                             right: 100%;
-                            width: 90%;
+                            width: 100%;
                             padding: 1.5rem 0rem;
                             top:0;
                             display: none;
@@ -356,6 +361,10 @@ header {
             padding: 0 3px;
             position: relative;
             transition: all .3s ease;
+
+            &:hover {
+                cursor: pointer;
+            }
 
             &:hover .card-upbox {
                 opacity: .9;
@@ -514,6 +523,10 @@ footer {
         line-height: 2rem;
         position: relative;
 
+        &:hover {
+            cursor: pointer;
+        }
+
         .index {
             opacity: 0;
             position: absolute;
@@ -653,6 +666,10 @@ footer {
                         position: absolute;
                         right: 2.5rem;
                         top: 1.7rem;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
 
                     h4 {
@@ -662,6 +679,10 @@ footer {
                         line-height: 40px;
                         display: inline-block;
                         margin-bottom: 3rem;
+
+                        a {
+                            color: #161c2d;
+                        }
                     }
 
                     #extra-nav {
@@ -688,6 +709,10 @@ footer {
                                 z-index: 9999999999;
                                 display: none;
 
+                                & > li:hover a {
+                                    color: #495fef;
+                                }
+
                                 li {
                                     padding: .4rem 1.3rem;
                                     margin: 0;
@@ -707,6 +732,12 @@ footer {
                                     justify-content: space-between;
                                     align-items: baseline;
                                 } 
+
+                                & > li.br_bottom {
+                                    border-bottom: 1px solid #c3c3c3;
+                                }
+
+                               
                                 
 
                             }
@@ -732,16 +763,20 @@ footer {
                                 left: 0;
                                 width: 100%;
                                 height: 100%;
-                                background-color: red;
                                 opacity: 1;
                                 z-index: 4;
                                 opacity: 0;
+
+                                &:hover + a {
+                                    color: #495fef;
+                                }
                             }
 
                             & > span:nth-child(1) {
-                                background-color: blue;
                                 z-index: 5;
                             }
+
+                            
 
                         }
 
@@ -802,6 +837,10 @@ footer {
 
     }
 
+    footer {
+        padding: 0rem 0 3rem  0;
+    }
+
 }
 
 @media only screen and (max-width: 48em) {
@@ -836,6 +875,10 @@ footer {
                     flex-basis: 10%;
                     background-color: #161c2d;
                     margin: 0 auto;
+                }
+
+                &:hover {
+                    cursor: pointer;
                 }
             }
 
